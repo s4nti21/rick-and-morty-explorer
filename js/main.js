@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const pageInfo = document.getElementById("pageInfo");
@@ -42,3 +43,15 @@ prevBtn.addEventListener("click", () => {
 });
 
 loadPage(1);
+=======
+import { getCharacters } from "./api.js";
+import { renderCharacters } from "./ui.js";
+
+async function init() {
+  const data = await getCharacters();
+
+  renderCharacters(data.results);
+}
+
+init();
+>>>>>>> b100b8b1ab97aa9d55812408c482c93730ceba4d
