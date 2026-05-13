@@ -18,3 +18,13 @@ export function createCharacterCard(character) {
       </article>
     `;
   }
+
+  export function renderCharacters(characters) {
+    const container = document.getElementById("characters-container");
+  
+    container.innerHTML = "";
+  
+    characters.forEach(character => {
+      container.innerHTML += createCharacterCard(character);
+    });
+  }
