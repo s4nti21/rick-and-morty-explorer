@@ -1,3 +1,4 @@
+// renderizamos personajes
 export function createCharacterCard(character) {
     return `
       <article class="card">
