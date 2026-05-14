@@ -1,3 +1,4 @@
+// renderizamos personajes
 export function createCharacterCard(character) {
     return `
       <article class="card">
@@ -16,4 +17,14 @@ export function createCharacterCard(character) {
         </div>
       </article>
     `;
+  }
+
+  export function renderCharacters(characters) {
+    const container = document.getElementById("characters-container");
+  
+    container.innerHTML = "";
+  
+    characters.forEach(character => {
+      container.innerHTML += createCharacterCard(character);
+    });
   }

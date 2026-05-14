@@ -1,35 +1,160 @@
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  
+  /* paginacion */
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+  
+    padding: 25px;
+  }
+  
+  /* personalizamos botones */
+  
+  button {
+    background-color: #00b5cc;
+    color: white;
+  
+    border: none;
+    border-radius: 10px;
+  
+    padding: 12px 20px;
+  
+    cursor: pointer;
+  
+    font-size: 1rem;
+    font-weight: bold;
+  
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  
+  button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  /* informacion de la pagina */
+  
+  #pageInfo {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  /* damos style a las cards */
+  
+  .cards-container {
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  
+    gap: 24px;
+  
+    padding: 30px;
   }
   
   .card {
-    background: #2c2c2c;
-    border-radius: 10px;
+    background-color: #1e1e1e;
+  
+    border-radius: 18px;
+  
     overflow: hidden;
-    color: white;
+  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   }
   
   .card img {
     width: 100%;
+    height: 300px;
+  
+    object-fit: cover;
   }
   
+  .card-content {
+    padding: 18px;
+  }
+  
+  .card-content h2 {
+    font-size: 1.5rem;
+  
+    margin-bottom: 14px;
+  
+    color: #ffffff;
+  }
+  
+  .card-content p {
+    margin-bottom: 10px;
+  
+    color: #cfcfcf;
+  
+    font-size: 0.95rem;
+  }
+  
+  /* acomodamos estado */
+  
+  .status-container {
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 8px;
+  }
+  
+  
   .status {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
+  
     border-radius: 50%;
+  
     display: inline-block;
   }
   
+  /* le damos color */
+  
   .alive {
-    background: green;
+    background-color: #55cc44;
   }
   
   .dead {
-    background: red;
+    background-color: #d63d2e;
   }
   
   .unknown {
-    background: gray;
+    background-color: #9e9e9e;
+  }
+  
+  /* realizamos responsive */
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      padding: 15px;
+    }
+  
+    .pagination {
+      flex-direction: column;
+    }
+  
+    .card img {
+      height: 250px;
+    }
   }
