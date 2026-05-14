@@ -1,4 +1,4 @@
-// renderizamos personajes
+// creamos personajes
 export function createCharacterCard(character) {
     return `
       <article class="card">
@@ -18,7 +18,7 @@ export function createCharacterCard(character) {
       </article>
     `;
   }
-
+// renderizamos personajes
   export function renderCharacters(characters) {
     const container = document.getElementById("characters-container");
   

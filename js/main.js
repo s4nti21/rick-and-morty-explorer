@@ -9,6 +9,7 @@ async function init() {
 
 init();
 
+// damos funcion a los botones
 let currentPage = 1;
 
 const prevBtn = document.getElementById("prevBtn");

@@ -6,22 +6,46 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Rick and Morty Explorer</title>
 </head>
+
 <body>
+
+    <header class="header">
+        <h1>Rick and Morty Explorer</h1>
+        <p>Explorá personajes de la serie usando la API de Rick and Morty</p>
+    </header>
+
+
     <div class="pagination">
 
-    <button id="prevBtn">Anterior</button>
+        <button id="prevBtn">Anterior</button>
 
-    <span id="pageInfo">
-        Página 1 de 42
-    </span>
+        <span id="pageInfo">
+            Página 1 de 42
+        </span>
 
-    <button id="nextBtn">Siguiente</button>
+        <button id="nextBtn">Siguiente</button>
 
-</div>
+    </div>
+
+
     <main>
-        <!-- creamos contenedor en el html -->
+
         <section id="characters-container" class="cards-container"></section>
-      </main>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>
+            Proyecto realizado con la Rick and Morty API
+        </p>
+
+        <p>
+            Integrantes: Santiago Weidmann - Gonzalo Silva - Jerónimo Ocampo
+        </p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+
 </body>
-<script type="module" src="js/main.js"></script>
 </html>
