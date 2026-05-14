@@ -1,22 +1,11 @@
-/* damos style a las cards */
-/* RESET */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* BODY */
-  
-  body {
+body {
     background-color: #121212;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
   }
   
-  /* PAGINACION */
+  /* paginacion */
   
   .pagination {
     display: flex;
@@ -27,7 +16,7 @@
     padding: 25px;
   }
   
-  /* BOTONES */
+  /* personalizamos botones */
   
   button {
     background-color: #00b5cc;
@@ -57,14 +46,14 @@
     opacity: 0.6;
   }
   
-  /* INFO PAGINA */
+  /* informacion de la pagina */
   
   #pageInfo {
     font-size: 1rem;
     font-weight: bold;
   }
-  
-  /* CONTENEDOR CARDS */
+
+  /* damos style a las cards */
   
   .cards-container {
     display: grid;
@@ -76,8 +65,6 @@
     padding: 30px;
   }
   
-  /* CARD */
-  
   .card {
     background-color: #1e1e1e;
   
@@ -86,10 +73,7 @@
     overflow: hidden;
   
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
+
   }
   
   .card:hover {
@@ -98,8 +82,6 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   }
   
-  /* IMAGEN */
-  
   .card img {
     width: 100%;
     height: 300px;
@@ -107,13 +89,9 @@
     object-fit: cover;
   }
   
-  /* CONTENIDO */
-  
   .card-content {
     padding: 18px;
   }
-  
-  /* TITULO */
   
   .card-content h2 {
     font-size: 1.5rem;
@@ -123,8 +101,6 @@
     color: #ffffff;
   }
   
-  /* TEXTOS */
-  
   .card-content p {
     margin-bottom: 10px;
   
@@ -133,7 +109,7 @@
     font-size: 0.95rem;
   }
   
-  /* STATUS */
+  /* acomodamos estado */
   
   .status-container {
     display: flex;
@@ -143,7 +119,6 @@
     gap: 8px;
   }
   
-  /* CIRCULO STATUS */
   
   .status {
     width: 12px;
@@ -154,7 +129,7 @@
     display: inline-block;
   }
   
-  /* COLORES STATUS */
+  /* le damos color */
   
   .alive {
     background-color: #55cc44;
@@ -168,7 +143,7 @@
     background-color: #9e9e9e;
   }
   
-  /* RESPONSIVE */
+  /* realizamos responsive */
   
   @media (max-width: 768px) {
     .cards-container {
