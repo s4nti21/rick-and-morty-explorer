@@ -14,5 +14,6 @@ Tecnologias utilizadas:
 API:
 https://rickandmortyapi.com/
 
-Cómo ejecutar:
-Abrir index.html con Live Server
+Muestra visual: 
+carpeta /img estan las capturas.
+
